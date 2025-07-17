@@ -1,0 +1,67 @@
+/* Custom styles for your navbar */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 85px;
+  /* Sesuaikan tinggi navbar */
+  margin: 0;
+}
+
+/* Pink button style */
+.btn-login {
+  background-color: #ff007f; /* A shade of vibrant pink */
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-login:hover {
+  background-color: #cc0066; /* Darker pink on hover */
+  color: white; /* Ensure text remains white on hover */
+}
+
+/* Active navigation link style */
+.navbar-nav .nav-link.active {
+  color: #ff007f !important; /* Vibrant pink for active link */
+  font-weight: 600; /* Bold for active link */
+}
+
+/* Adjust general nav link styling for better appearance */
+.navbar-nav .nav-link {
+  color: #333; /* Darker text for non-active links */
+  padding: 0.5rem 1rem; /* Add some padding for spacing */
+  transition: color 0.3s ease;
+  margin-right: 0.75rem;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ff007f; /* Pink on hover for non-active links */
+}
+
+/* Custom styling for the navbar wrapper */
+.navbar-wrapper {
+  /* Memberi batas bawah pada wrapper */
+  border-bottom: 1px solid #e0e0e0; /* Batas abu-abu tipis */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Sedikit bayangan untuk kedalaman */
+  z-index: 1020; /* Pastikan navbar berada di atas konten lain saat sticky */
+  background-color: white; /* Pastikan latar belakang tetap putih saat sticky */
+}
+
+/* Hapus bayangan default dari navbar Bootstrap jika ada */
+.navbar {
+  box-shadow: none !important;
+}
+
+/* Kompensasi padding untuk konten di bawah navbar sticky */
+body {
+  padding-top: var(--navbar-height, 0); /* Akan diisi oleh JavaScript jika perlu */
+}
